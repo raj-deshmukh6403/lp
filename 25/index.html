@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Portfolio</title>
+    
+    <!-- Using modern libraries instead of jQuery Mobile -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo" data-page="home">John Doe</a>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#" class="active" data-page="home">Home</a></li>
+            <li><a href="#about" data-page="about">About</a></li>
+            <li><a href="#projects" data-page="projects">Projects</a></li>
+            <li><a href="#skills" data-page="skills">Skills</a></li>
+            <li><a href="#contact" data-page="contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="mobile-menu-overlay"></div>
+    
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <div class="profile-container">
+            <img src="/api/placeholder/300/300" alt="John Doe" class="profile-image">
+            <h1>John Doe</h1>
+            <p class="tagline">Full Stack Developer</p>
+        </div>
+        
+        <div class="navigation-tiles">
+            <a href="#about" class="nav-tile" data-page="about">
+                <div class="tile-icon">👤</div>
+                <span>About Me</span>
+            </a>
+            <a href="#projects" class="nav-tile" data-page="projects">
+                <div class="tile-icon">💻</div>
+                <span>Projects</span>
+            </a>
+            <a href="#skills" class="nav-tile" data-page="skills">
+                <div class="tile-icon">🔧</div>
+                <span>Skills</span>
+            </a>
+            <a href="#contact" class="nav-tile" data-page="contact">
+                <div class="tile-icon">📱</div>
+                <span>Contact</span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="page-content">
+            <img src="/api/placeholder/300/300" alt="John Doe" class="small-profile">
+            <h2>Who Am I?</h2>
+            <p>Hello! I'm John Doe, a passionate Full Stack Developer with over 5 years of industry experience. I specialize in creating responsive, user-friendly web applications using modern technologies.</p>
+            
+            <h3>Background</h3>
+            <p>I hold a Master's degree in Computer Science from MIT and have worked with various startups and established companies to deliver innovative solutions. My approach combines technical expertise with creative problem-solving.</p>
+            
+            <h3>Philosophy</h3>
+            <p>I believe in writing clean, maintainable code and creating applications that provide exceptional user experiences. I'm constantly learning new technologies and methodologies to stay at the cutting edge of web development.</p>
+            
+            <h3>Personal Interests</h3>
+            <p>When I'm not coding, you can find me hiking in the mountains, reading science fiction, or experimenting with new recipes in the kitchen.</p>
+        </div>
+    </section>
+    
+    <!-- Projects Page -->
+    <section id="projects" class="page">
+        <div class="page-content">
+            <h2>My Recent Work</h2>
+            <p>Here are some of the projects I've worked on recently:</p>
+            
+            <div id="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p>A fully responsive e-commerce website with user authentication, product management, shopping cart, and payment integration.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3 class="project-title">Task Management App</h3>
+                    <p>A modern task management application with drag-and-drop functionality, user collaboration, and real-time updates.</p>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Vuetify</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3 class="project-title">Weather Dashboard</h3>
+                    <p>An interactive weather dashboard that provides current weather conditions and forecasts for locations worldwide.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Weather API</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Page -->
+    <section id="skills" class="page">
+        <div class="page-content">
+            <h2>Technical Skills</h2>
+            <p>I've developed expertise in various technologies and methodologies:</p>
+            
+            <div class="skills-container">
+                <!-- Frontend Skills -->
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <div class="skill-name">HTML5</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 95%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill-name">CSS3</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 90%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 85%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <div class="skill-name">React</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 80%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                    <div class="skill-name">Vue.js</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 75%;"></div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 85%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-name">MongoDB</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 80%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <div class="skill-name">Express</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 75%;"></div>
+                    </div>
+                </div>
+                
+                <!-- Other Skills -->
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <div class="skill-name">Git</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 90%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                    <div class="skill-name">Docker</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 70%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="skill-name">Responsive Design</div>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="page-content">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, opportunities, or creative ideas.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <div class="contact-label">Email</div>
+                        <div>john.doe@example.com</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <div class="contact-label">Phone</div>
+                        <div>+1 (555) 123-4567</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <div class="contact-label">Location</div>
+                        <div>San Francisco, CA</div>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 John Doe. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

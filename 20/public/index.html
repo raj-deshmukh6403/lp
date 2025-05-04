@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Management</h1>
+
+    <!-- Add New Employee Form -->
+    <form id="add-employee-form">
+      <h2>Add New Employee</h2>
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="department" placeholder="Department" required>
+      <input type="text" id="designation" placeholder="Designation" required>
+      <input type="number" id="salary" placeholder="Salary" required>
+      <input type="date" id="joiningDate" placeholder="Joining Date" required>
+      <button type="submit">Add Employee</button>
+    </form>
+
+    <!-- Update Employee Form -->
+    <form id="update-employee-form" style="display: none;">
+      <h2>Update Employee</h2>
+      <input type="hidden" id="update-id">
+      <input type="text" id="update-name" placeholder="Name" required>
+      <input type="text" id="update-department" placeholder="Department" required>
+      <input type="text" id="update-designation" placeholder="Designation" required>
+      <input type="number" id="update-salary" placeholder="Salary" required>
+      <input type="date" id="update-joiningDate" placeholder="Joining Date" required>
+      <button type="submit">Update Employee</button>
+      <button type="button" id="cancel-update">Cancel</button>
+    </form>
+
+    <table id="employee-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Designation</th>
+          <th>Salary</th>
+          <th>Joining Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Populated by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

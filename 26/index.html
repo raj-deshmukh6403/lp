@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PICT B.E. Course Structure</title>
+    
+    <!-- jQuery Mobile CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+    
+    <style>
+        /* Simple custom styles */
+        .college-logo {
+            max-width: 150px;
+            display: block;
+            margin: 10px auto;
+        }
+        
+        .my-header {
+            background-color: #3366cc !important;
+            color: white !important;
+            text-shadow: none !important;
+            font-weight: bold;
+        }
+        
+        .year-header {
+            background-color: #6699ff !important;
+        }
+        
+        .subject-name {
+            font-weight: bold;
+            color: #3366cc;
+        }
+        
+        .subject-code {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .my-footer {
+            text-align: center;
+            font-size: 12px;
+        }
+        
+        /* Some basic animation for fun */
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .ui-collapsible-content {
+            animation: fade-in 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header" class="my-header">
+            <h1>PICT B.E. Courses</h1>
+        </div>
+        
+        <div role="main" class="ui-content">
+            <img src="/api/placeholder/150/150" alt="PICT Logo" class="college-logo">
+            
+            <h2 style="text-align: center;">Pune Institute of Computer Technology</h2>
+            <p style="text-align: center;">Bachelor of Engineering<br>Computer Engineering Department</p>
+            
+            <!-- Year-wise collapsible sections -->
+            <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+                
+                <!-- First Year -->
+                <div data-role="collapsible" class="year-header">
+                    <h3>First Year (FE)</h3>
+                    
+                    <div data-role="collapsibleset">
+                        <div data-role="collapsible">
+                            <h4>Engineering Mathematics I (110001)</h4>
+                            <p><span class="subject-code">110001</span></p>
+                            <p>Introduction to differential calculus, integral calculus, and differential equations. Applications in engineering problems.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Engineering Physics (110002)</h4>
+                            <p><span class="subject-code">110002</span></p>
+                            <p>Study of mechanics, optics, quantum physics and semiconductor physics with engineering applications.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Engineering Chemistry (110003)</h4>
+                            <p><span class="subject-code">110003</span></p>
+                            <p>Fundamentals of chemistry important for engineering including polymers, electrochemistry and corrosion.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Engineering Mechanics (110004)</h4>
+                            <p><span class="subject-code">110004</span></p>
+                            <p>Study of forces, moments, equilibrium, friction, centroid, and moment of inertia with engineering applications.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Basic Electrical Engineering (110005)</h4>
+                            <p><span class="subject-code">110005</span></p>
+                            <p>Introduction to electrical circuits, network theorems, AC fundamentals, and electrical machines.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Programming and Problem Solving (110006)</h4>
+                            <p><span class="subject-code">110006</span></p>
+                            <p>Introduction to C programming, algorithms, data structures, and problem-solving techniques.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second Year -->
+                <div data-role="collapsible" class="year-header">
+                    <h3>Second Year (SE)</h3>
+                    
+                    <div data-role="collapsibleset">
+                        <div data-role="collapsible">
+                            <h4>Data Structures and Algorithms</h4>
+                            <p><span class="subject-code">210241</span></p>
+                            <p>Implementation and analysis of various data structures like arrays, linked lists, stacks, queues, trees, and graphs. Algorithm design techniques.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Object-Oriented Programming</h4>
+                            <p><span class="subject-code">210242</span></p>
+                            <p>Concepts of classes, objects, inheritance, polymorphism, encapsulation, and abstraction using Java programming language.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Digital Electronics and Logic Design</h4>
+                            <p><span class="subject-code">210243</span></p>
+                            <p>Study of number systems, boolean algebra, logic gates, combinational and sequential circuits, and digital logic design.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Computer Organization</h4>
+                            <p><span class="subject-code">210244</span></p>
+                            <p>Architecture of computer systems, CPU organization, memory hierarchy, I/O organization, and assembly language programming.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Discrete Mathematics</h4>
+                            <p><span class="subject-code">210245</span></p>
+                            <p>Study of sets, relations, functions, graph theory, propositional logic, and mathematical reasoning.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Engineering Mathematics III</h4>
+                            <p><span class="subject-code">207003</span></p>
+                            <p>Linear algebra, Fourier series, partial differential equations, and complex variables with applications.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Third Year -->
+                <div data-role="collapsible" class="year-header">
+                    <h3>Third Year (TE)</h3>
+                    
+                    <div data-role="collapsibleset">
+                        <div data-role="collapsible">
+                            <h4>Theory of Computation</h4>
+                            <p><span class="subject-code">310241</span></p>
+                            <p>Formal languages, automata theory, Turing machines, computability, and complexity theory.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Database Management Systems</h4>
+                            <p><span class="subject-code">310242</span></p>
+                            <p>Relational data model, SQL, database design, normalization, transaction management, and concurrency control.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Computer Networks</h4>
+                            <p><span class="subject-code">310243</span></p>
+                            <p>Network architectures, TCP/IP protocol suite, routing algorithms, network security, and socket programming.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Operating Systems</h4>
+                            <p><span class="subject-code">310244</span></p>
+                            <p>Process management, memory management, file systems, I/O systems, and protection and security in operating systems.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Design and Analysis of Algorithms</h4>
+                            <p><span class="subject-code">310245</span></p>
+                            <p>Algorithm design techniques, complexity analysis, greedy algorithms, dynamic programming, and NP-completeness.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Software Engineering</h4>
+                            <p><span class="subject-code">310246</span></p>
+                            <p>Software development life cycle, requirements engineering, design principles, testing strategies, and project management.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fourth Year -->
+                <div data-role="collapsible" class="year-header">
+                    <h3>Final Year (BE)</h3>
+                    
+                    <div data-role="collapsibleset">
+                        <div data-role="collapsible">
+                            <h4>Machine Learning</h4>
+                            <p><span class="subject-code">410241</span></p>
+                            <p>Supervised and unsupervised learning, neural networks, decision trees, support vector machines, and reinforcement learning.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Information and Cyber Security</h4>
+                            <p><span class="subject-code">410242</span></p>
+                            <p>Cryptography, authentication mechanisms, network security, web security, and computer forensics.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Cloud Computing</h4>
+                            <p><span class="subject-code">410243</span></p>
+                            <p>Cloud infrastructure, service models, virtualization, cloud storage, and cloud security concepts.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Elective I: Internet of Things</h4>
+                            <p><span class="subject-code">410244A</span></p>
+                            <p>IoT architecture, protocols, sensors, actuators, and IoT application development.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Elective II: Data Science</h4>
+                            <p><span class="subject-code">410244B</span></p>
+                            <p>Data mining, statistical methods, data visualization, and big data technologies.</p>
+                        </div>
+                        
+                        <div data-role="collapsible">
+                            <h4>Project Work</h4>
+                            <p><span class="subject-code">410245</span></p>
+                            <p>Industry-relevant or research-oriented project to apply knowledge and skills acquired throughout the program.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a">
+                <p>This is a simplified overview of the B.E. Computer Engineering curriculum at PICT. For detailed syllabus, please refer to the official college website.</p>
+            </div>
+            
+            <a href="#popupInfo" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-info ui-btn-icon-left">Important Note</a>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <a href="#about" data-role="button" data-transition="slide">About PICT</a>
+            </div>
+        </div>
+        
+        <div data-role="footer" class="my-footer">
+            <h4>Created by Student Developer | Last Updated: May 2025</h4>
+        </div>
+    </div>
+    
+    <!-- About Page -->
+    <div data-role="page" id="about">
+        <div data-role="header" class="my-header">
+            <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+            <h1>About PICT</h1>
+        </div>
+        
+        <div role="main" class="ui-content">
+            <img src="/api/placeholder/150/150" alt="PICT Campus" class="college-logo">
+            
+            <h3>Pune Institute of Computer Technology</h3>
+            
+            <p>Established in 1983, Pune Institute of Computer Technology (PICT) is one of the premier engineering colleges in Pune, Maharashtra.</p>
+            
+            <p>PICT offers undergraduate and postgraduate programs in Computer Engineering, Information Technology, and Electronics & Telecommunication Engineering.</p>
+            
+            <h4>Key Features:</h4>
+            <ul>
+                <li>State-of-the-art infrastructure</li>
+                <li>Experienced faculty members</li>
+                <li>Industry collaborations</li>
+                <li>Research opportunities</li>
+                <li>Active placement cell</li>
+            </ul>
+            
+            <p>The Computer Engineering department aims to produce technically competent engineers equipped with problem-solving skills and ethical values.</p>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <a href="#" onclick="window.open('tel:02024371101')" data-role="button" data-inline="true" data-icon="phone">Call</a>
+                <a href="#" onclick="window.open('mailto:principal@pict.edu')" data-role="button" data-inline="true" data-icon="mail">Email</a>
+            </div>
+        </div>
+        
+        <div data-role="footer" class="my-footer">
+            <h4>Created by Student Developer | Last Updated: May 2025</h4>
+        </div>
+    </div>
+    
+    <script>
+        // Very simple script to add some interaction
+        $(document).ready(function() {
+            // Simple loading message
+            $.mobile.loading("show", {
+                text: "Loading courses...",
+                textVisible: true
+            });
+            
+            setTimeout(function() {
+                $.mobile.loading("hide");
+            }, 1500);
+            
+            // Track number of clicks for fun
+            var clickCount = 0;
+            
+            $(".ui-collapsible-heading").on("click", function() {
+                clickCount++;
+                if (clickCount == 10) {
+                    alert("You seem interested in our courses! Feel free to visit PICT for more information.");
+                }
+            });
+            
+            // Add a simple transition effect
+            $(".year-header").on("collapsibleexpand", function() {
+                $(this).css("border-left", "5px solid #ff9900");
+            });
+            
+            $(".year-header").on("collapsiblecollapse", function() {
+                $(this).css("border-left", "none");
+            });
+        });
+    </script>
+</body>
+</html>

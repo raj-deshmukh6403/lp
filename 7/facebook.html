@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log In or Sign Up</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #1877f2;
+            padding: 8px 0;
+        }
+        .facebook-logo {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .login-form {
+            display: flex;
+            align-items: flex-start;
+        }
+        .login-form input {
+            height: 35px;
+            font-size: 14px;
+        }
+        .login-form label {
+            color: white;
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+        .login-btn {
+            background-color: #4267b2;
+            border: 1px solid #29487d;
+            color: white;
+            height: 35px;
+        }
+        .login-btn:hover {
+            background-color: #365899;
+            color: white;
+        }
+        .forgot-password {
+            color: #fff;
+            font-size: 12px;
+            text-decoration: none;
+            display: block;
+            margin-top: 3px;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+        .main-content {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+        }
+        .left-section {
+            flex: 1;
+            padding: 20px;
+            background-color: #f0f2f5;
+            margin-right: 20px;
+        }
+        .right-section {
+            flex: 1;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+            padding: 20px;
+        }
+        .signup-btn {
+            background-color: #42b72a;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            width: 100px;
+        }
+        .signup-btn:hover {
+            background-color: #36a420;
+        }
+        .tagline {
+            font-size: 28px;
+            font-weight: bold;
+            color: #1c1e21;
+            margin-bottom: 20px;
+        }
+        .subtext {
+            font-size: 16px;
+            color: #1c1e21;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .network-image {
+            width: 100%;
+            margin-top: 20px;
+            max-height: 300px;
+            object-fit: contain;
+        }
+        .create-account {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1c1e21;
+        }
+        .free-text {
+            font-size: 15px;
+            color: #606770;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            padding: 12px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid #dddfe2;
+            margin-bottom: 10px;
+        }
+        .gender-select {
+            display: flex;
+            margin: 10px 0;
+        }
+        .form-check {
+            margin-right: 20px;
+        }
+        .terms {
+            font-size: 12px;
+            color: #777;
+            margin: 15px 0;
+        }
+        .create-page {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .handwriting {
+            color: #1877f2;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 14px;
+            font-weight: normal;
+            position: relative;
+            top: 15px;
+            left: 10px;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-container input {
+            height: auto;
+            margin-right: 5px;
+        }
+        .checkbox-container label {
+            margin-top: 2px;
+        }
+        .date-input {
+            display: flex;
+            align-items: center;
+        }
+        .date-input input {
+            width: 80%;
+        }
+        .date-input .calendar-icon {
+            margin-left: 10px;
+            font-size: 20px;
+            color: #65676b;
+        }
+        .container-fluid {
+            padding: 0;
+        }
+        .row {
+            margin: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-md-6">
+                    <a class="facebook-logo" href="#">facebook</a>
+                </div>
+                <div class="col-md-6">
+                    <form class="login-form d-flex justify-content-end">
+                        <div class="me-2">
+                            <label for="email">Email or Username</label>
+                            <input type="text" id="email" class="form-control form-control-sm" placeholder="Email">
+                            <div class="checkbox-container mt-1">
+                                <input type="checkbox" id="keep-logged" class="me-1">
+                                <label for="keep-logged">Keep me logged in</label>
+                            </div>
+                        </div>
+                        <div class="me-2">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" class="form-control form-control-sm" placeholder="Password">
+                            <a href="#" class="forgot-password">Forgotten my password!</a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <button type="submit" class="login-btn btn mb-1">login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Left Section -->
+            <div class="col-md-6">
+                <div class="left-section">
+                    <div class="tagline">Facebook is useless without friends.<br>Make More Friends.</div>
+                    <div class="subtext">
+                        Facebook helps you connect and share with the people in your life.
+                        <span class="handwriting">interesting, engaging, fun, like-able content</span>
+                    </div>
+                    <img src="1.png" alt="Network of friends" class="network-image">
+                </div>
+            </div>
+            
+            <!-- Right Section -->
+            <div class="col-md-6">
+                <div class="right-section">
+                    <h2 class="create-account">Create an Account</h2>
+                    <p class="free-text">It's free and always will be.</p>
+                    
+                    <form>
+                        <div class="row g-2 mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Firstname">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Lastname">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Re-enter email">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        
+                        <div class="mb-3 date-input">
+                            <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                            <span class="calendar-icon">📅</span>
+                        </div>
+                        
+                        <div class="gender-select">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="male">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="female">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                        </div>
+                        
+                        <div class="terms">
+                            By clicking create an account, you agree to our Terms.
+                        </div>
+                        
+                        <button type="submit" class="signup-btn">Signup</button>
+                    </form>
+                    
+                    <div class="create-page">
+                        <a href="#">Create a page for you.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

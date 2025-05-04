@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "price": 59.99,
+      "image": "assets/headphones.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "price": 699.99,
+      "image": "assets/smartphone.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Laptop",
+      "price": 999.99,
+      "image": "assets/laptop.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Smart Watch",
+      "price": 199.99,
+      "image": "assets/smartwatch.jpg"
+    }
+  ]

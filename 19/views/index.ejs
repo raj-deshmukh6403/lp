@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Marks</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📘 Student Marks Dashboard</h1>
+    <p>Total Students: <strong><%= count %></strong></p>
+
+    <!-- Show all students -->
+    <form method="GET" action="/students/all">
+      <button type="submit">Show All Students</button>
+    </form>
+
+    <!-- Dynamic Filters -->
+    <form method="GET" action="/students/dsbda" class="filter-form">
+      <label for="dsbda">DSBDA > Marks:</label>
+      <input name="marks" type="number" placeholder="Enter marks" />
+      <button type="submit">Filter</button>
+    </form>
+
+    <form method="GET" action="/students/above" class="filter-form">
+      <label for="above">All Subjects > Marks:</label>
+      <input name="marks" type="number" placeholder="Enter marks" />
+      <button type="submit">Filter</button>
+    </form>
+
+    <form method="GET" action="/students/below" class="filter-form">
+      <label for="below">WAD & CNS < Marks:</label>
+      <input name="marks" type="number" placeholder="Enter marks" />
+      <button type="submit">Filter</button>
+    </form>
+
+    <!-- Insert New Student -->
+    <h3>Insert New Student</h3>
+    <form method="POST" action="/students/insert">
+      <input name="Name" placeholder="Name" required />
+      <input name="Roll_No" type="number" placeholder="Roll No" required />
+      <input name="WAD_Marks" type="number" placeholder="WAD Marks" required />
+      <input name="CC_Marks" type="number" placeholder="CC Marks" required />
+      <input name="DSBDA_Marks" type="number" placeholder="DSBDA Marks" required />
+      <input name="CNS_Marks" type="number" placeholder="CNS Marks" required />
+      <input name="AI_marks" type="number" placeholder="AI Marks" required />
+      <button type="submit">Insert Student</button>
+    </form>
+
+    <!-- Update Student -->
+    <h3>Update Student by Roll No</h3>
+    <form method="POST" action="/students/update">
+      <input name="roll" placeholder="Roll No" required />
+      <input name="Name" placeholder="Name" required />
+      <input name="WAD_Marks" type="number" placeholder="WAD Marks" required />
+      <input name="CC_Marks" type="number" placeholder="CC Marks" required />
+      <input name="DSBDA_Marks" type="number" placeholder="DSBDA Marks" required />
+      <input name="CNS_Marks" type="number" placeholder="CNS Marks" required />
+      <input name="AI_marks" type="number" placeholder="AI Marks" required />
+      <button type="submit">Update Student</button>
+    </form>
+
+    <!-- Delete Student -->
+    <h3>Delete Student by Roll No</h3>
+    <form method="POST" action="/students/delete">
+      <input name="roll" placeholder="Roll No" required />
+      <button type="submit">Delete</button>
+    </form>
+
+    <!-- Update Marks by 10 -->
+    <h3>Update Marks of Student by 10</h3>
+    <form method="POST" action="/students/updateMarks">
+      <input name="roll" placeholder="Roll No" required />
+      <label for="subject">Subject:</label>
+      <select name="subject">
+        <option value="WAD_Marks">WAD</option>
+        <option value="CC_Marks">CC</option>
+        <option value="DSBDA_Marks">DSBDA</option>
+        <option value="CNS_Marks">CNS</option>
+        <option value="AI_marks">AI</option>
+      </select>
+      <label for="allSubjects">All Subjects:</label>
+      <input type="checkbox" name="allSubjects" value="true" />
+      <button type="submit">Update Marks</button>
+    </form>
+
+    <!-- Table Display -->
+    <table>
+      <tr>
+        <th>Name</th><th>Roll</th>
+        <th>WAD</th><th>CC</th><th>DSBDA</th><th>CNS</th><th>AI</th>
+      </tr>
+      <% students.forEach(stu => { %>
+        <tr>
+          <td><%= stu.Name %></td>
+          <td><%= stu.Roll_No %></td>
+          <td><%= stu.WAD_Marks %></td>
+          <td><%= stu.CC_Marks %></td>
+          <td><%= stu.DSBDA_Marks %></td>
+          <td><%= stu.CNS_Marks %></td>
+          <td><%= stu.AI_marks %></td>
+        </tr>
+      <% }) %>
+    </table>
+  </div>
+</body>
+</html>

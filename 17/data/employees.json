@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "designation": "Software Engineer",
+      "department": "IT",
+      "salary": 75000,
+      "image": "assets/alice.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "designation": "HR Manager",
+      "department": "Human Resources",
+      "salary": 60000,
+      "image": "assets/bob.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Charlie Brown",
+      "designation": "Marketing Specialist",
+      "department": "Marketing",
+      "salary": 65000,
+      "image": "assets/charlie.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Diana Prince",
+      "designation": "Project Manager",
+      "department": "IT",
+      "salary": 85000,
+      "image": "assets/diana.jpg"
+    }
+  ]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Data List</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #clearUsersBtn {
+      padding: 10px 16px;
+      font-size: 16px;
+      background-color: #c62828;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    #clearUsersBtn:hover {
+      background-color: #a91d1d;
+    }
+
+    #userCards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .user-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      background-color: #fdfdfd;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.2s ease;
+    }
+
+    .user-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .user-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .user-card p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 16px;
+      color: #333;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registered Users</h1>
+    <button id="clearUsersBtn">Clear All Users</button>
+    <div id="userCards">
+      <!-- User cards will be dynamically loaded here -->
+    </div>
+    <a href="index.html">Back to Registration</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

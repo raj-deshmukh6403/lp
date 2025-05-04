@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PICT - Pune Institute of Computer Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>PICT</h1>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div role="main" class="ui-content">
+        <div class="center-text">
+            <img src="/api/placeholder/200/150" alt="PICT Logo" class="logo" />
+            <h2>Pune Institute of Computer Technology</h2>
+            <p class="home-intro">Welcome to PICT Mobile Website. Pune Institute of Computer Technology is one of the premier engineering institutes in Maharashtra, offering quality education in Computer Engineering, Information Technology, and Electronics & Telecommunication Engineering.</p>
+        </div>
+        
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#about">About PICT</a></li>
+            <li><a href="#courses">Our Courses</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        
+        <div class="center-text">
+            <h3>Latest Updates</h3>
+            <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                    <h4>Upcoming Events</h4>
+                    <p>Technical Symposium: May 15-17, 2025</p>
+                    <p>Campus Recruitment Drive: June 1-10, 2025</p>
+                </div>
+                <div data-role="collapsible">
+                    <h4>Admissions Open</h4>
+                    <p>Applications for the academic year 2025-26 are now open. Last date for submission is June 30, 2025.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <h4>&copy; 2025 PICT, Pune</h4>
+    </div>
+</div>
+
+<!-- About Us Page -->
+<div data-role="page" id="about" data-transition="slide">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <a href="#home" data-icon="home">Home</a>
+        <h1>About PICT</h1>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about" class="ui-btn-active ui-state-persist">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div role="main" class="ui-content">
+        <img src="/api/placeholder/300/200" alt="PICT Campus" class="logo" />
+        
+        <h3>Vision</h3>
+        <p>To be a center of excellence in technical education contributing to the development of computing technology and enterprise competence to meet the socio-economic challenges of the modern world.</p>
+        
+        <h3>Mission</h3>
+        <ul>
+            <li>To develop competent computing professionals with social sensitivity</li>
+            <li>To promote research and innovation in collaboration with industry and society</li>
+            <li>To provide an environment for continuous learning and professional growth</li>
+        </ul>
+        
+        <h3>Our History</h3>
+        <p>Established in 1983, PICT has grown into one of the premier technical institutes in Maharashtra. The institute is affiliated to Savitribai Phule Pune University and is approved by AICTE.</p>
+        
+        <h3>Achievements</h3>
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h4>Academic Excellence</h4>
+                <p>PICT has been consistently ranked among the top engineering colleges in the state with exceptional academic results.</p>
+            </div>
+            <div data-role="collapsible">
+                <h4>Research & Innovation</h4>
+                <p>Our faculty and students have published numerous research papers in international journals and conferences.</p>
+            </div>
+            <div data-role="collapsible">
+                <h4>Industry Collaboration</h4>
+                <p>PICT has strong ties with leading tech companies, facilitating excellent placement opportunities for students.</p>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; 2025 PICT, Pune</h4>
+    </div>
+</div>
+
+<!-- Courses Page -->
+<div data-role="page" id="courses" data-transition="slide">
+    <div data-role="header" data-position="fixed">
+        <a href="#home" data-icon="home">Home</a>
+        <h1>Courses Offered</h1>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses" class="ui-btn-active ui-state-persist">Courses</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h3>Undergraduate Programs</h3>
+        <ul data-role="listview" data-inset="true" class="course-list">
+            <li>
+                <h4>B.E. Computer Engineering</h4>
+                <p>Duration: 4 Years</p>
+                <p>Intake: 180 students</p>
+            </li>
+            <li>
+                <h4>B.E. Information Technology</h4>
+                <p>Duration: 4 Years</p>
+                <p>Intake: 120 students</p>
+            </li>
+            <li>
+                <h4>B.E. Electronics & Telecommunication</h4>
+                <p>Duration: 4 Years</p>
+                <p>Intake: 120 students</p>
+            </li>
+        </ul>
+        
+        <h3>Postgraduate Programs</h3>
+        <ul data-role="listview" data-inset="true" class="course-list">
+            <li>
+                <h4>M.E. Computer Engineering</h4>
+                <p>Duration: 2 Years</p>
+                <p>Specializations: Data Science, AI & ML</p>
+            </li>
+            <li>
+                <h4>M.E. Electronics & Telecommunication</h4>
+                <p>Duration: 2 Years</p>
+                <p>Specializations: VLSI Design, Communication Systems</p>
+            </li>
+            <li>
+                <h4>Ph.D. in Engineering</h4>
+                <p>Available in all departments</p>
+            </li>
+        </ul>
+        
+        <h3>Certificate Courses</h3>
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h4>Web Development</h4>
+                <p>Duration: 3 months</p>
+                <p>Topics: HTML, CSS, JavaScript, Node.js, React</p>
+            </div>
+            <div data-role="collapsible">
+                <h4>Artificial Intelligence</h4>
+                <p>Duration: 6 months</p>
+                <p>Topics: Machine Learning, Deep Learning, Neural Networks</p>
+            </div>
+            <div data-role="collapsible">
+                <h4>IoT Applications</h4>
+                <p>Duration: 4 months</p>
+                <p>Topics: Embedded Systems, Sensor Networks, Cloud Integration</p>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; 2025 PICT, Pune</h4>
+    </div>
+</div>
+
+<!-- Departments Page -->
+<div data-role="page" id="departments" data-transition="slide">
+    <div data-role="header" data-position="fixed">
+        <a href="#home" data-icon="home">Home</a>
+        <h1>Departments</h1>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#departments" class="ui-btn-active ui-state-persist">Departments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div role="main" class="ui-content">
+        <div data-role="collapsible-set" class="department-list">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Computer Engineering</h3>
+                <img src="/api/placeholder/280/140" alt="Computer Dept" />
+                <p>The Department of Computer Engineering at PICT provides comprehensive education in various aspects of computer science and engineering.</p>
+                <h4>Key Research Areas:</h4>
+                <ul>
+                    <li>Artificial Intelligence & Machine Learning</li>
+                    <li>Data Science & Big Data Analytics</li>
+                    <li>Cloud Computing & Distributed Systems</li>
+                    <li>Computer Networks & Security</li>
+                </ul>
+                <h4>Faculty Strength: 40</h4>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Information Technology</h3>
+                <img src="/api/placeholder/280/140" alt="IT Dept" />
+                <p>The Department of Information Technology focuses on software development, database management, and IT infrastructure.</p>
+                <h4>Key Research Areas:</h4>
+                <ul>
+                    <li>Software Engineering & Architecture</li>
+                    <li>Web & Mobile Application Development</li>
+                    <li>Database Systems & Data Mining</li>
+                    <li>Internet of Things (IoT)</li>
+                </ul>
+                <h4>Faculty Strength: 35</h4>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Electronics & Telecommunication</h3>
+                <img src="/api/placeholder/280/140" alt="E&TC Dept" />
+                <p>The E&TC department provides education in electronic circuits, communication systems, and signal processing.</p>
+                <h4>Key Research Areas:</h4>
+                <ul>
+                    <li>VLSI Design & Embedded Systems</li>
+                    <li>Wireless Communication</li>
+                    <li>Signal & Image Processing</li>
+                    <li>Antenna Design & RF Engineering</li>
+                </ul>
+                <h4>Faculty Strength: 30</h4>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>Basic Sciences & Humanities</h3>
+                <img src="/api/placeholder/280/140" alt="BSH Dept" />
+                <p>This department handles foundation courses in Mathematics, Physics, and Humanities for first-year engineering students.</p>
+                <h4>Key Areas:</h4>
+                <ul>
+                    <li>Engineering Mathematics</li>
+                    <li>Applied Physics</li>
+                    <li>Communication Skills</li>
+                    <li>Professional Ethics</li>
+                </ul>
+                <h4>Faculty Strength: 25</h4>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; 2025 PICT, Pune</h4>
+    </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact" data-transition="slide">
+    <div data-role="header" data-position="fixed">
+        <a href="#home" data-icon="home">Home</a>
+        <h1>Contact Us</h1>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#contact" class="ui-btn-active ui-state-persist">Contact</a></li>
+        </ul>
+    </div>
+
+    <div role="main" class="ui-content">
+        <div class="contact-info">
+            <img src="/api/placeholder/300/200" alt="PICT Map" class="logo" />
+            
+            <h3>Address</h3>
+            <p>Pune Institute of Computer Technology<br>
+            Survey No. 27, Near Bharati Vidyapeeth<br>
+            Dhankawadi, Pune - 411043<br>
+            Maharashtra, India</p>
+            
+            <h3>Contact Numbers</h3>
+            <ul data-role="listview" data-inset="true">
+                <li>Main Office: +91-20-2437-1101</li>
+                <li>Admissions: +91-20-2437-1102</li>
+                <li>Placement Cell: +91-20-2437-1103</li>
+                <li>Examination Cell: +91-20-2437-1104</li>
+            </ul>
+            
+            <h3>Email</h3>
+            <ul data-role="listview" data-inset="true">
+                <li>General Inquiries: info@pict.edu</li>
+                <li>Admissions: admissions@pict.edu</li>
+                <li>Placements: placements@pict.edu</li>
+                <li>Principal's Office: principal@pict.edu</li>
+            </ul>
+            
+            <h3>Connect With Us</h3>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#" data-role="button" data-icon="star">Facebook</a>
+                <a href="#" data-role="button" data-icon="star">Twitter</a>
+                <a href="#" data-role="button" data-icon="star">LinkedIn</a>
+                <a href="#" data-role="button" data-icon="star">Instagram</a>
+            </div>
+            
+            <h3>Send a Message</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject">
+                
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea>
+                
+                <button type="submit" data-theme="b">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; 2025 PICT, Pune</h4>
+    </div>
+</div>
+
+</body>
+</html>

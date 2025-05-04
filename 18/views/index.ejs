@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🎵 Music Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎵 Music Library</h1>
+    <p>Total Songs: <%= count %></p>
+
+    <div class="card-grid">
+      <% songs.forEach(song => { %>
+        <div class="card">
+          <h2><%= song.songname %></h2>
+          <p><strong>🎬 Film:</strong> <%= song.film %></p>
+          <p><strong>🎼 Music Director:</strong> <%= song.music_director %></p>
+          <p><strong>🎤 Singer:</strong> <%= song.singer %></p>
+          <p><strong>🧔 Actor:</strong> <%= song.actor || '-' %></p>
+          <p><strong>👩 Actress:</strong> <%= song.actress || '-' %></p>
+          <a class="btn delete" href="/songs/delete/<%= song.songname %>">🗑️ Delete</a>
+        </div>
+      <% }); %>
+    </div>
+
+    <!-- Add Song -->
+    <h2>Add a Song</h2>
+    <form action="/songs/add" method="POST" class="form">
+      <input name="songname" placeholder="Song Name" required />
+      <input name="film" placeholder="Film" required />
+      <input name="music_director" placeholder="Music Director" required />
+      <input name="singer" placeholder="Singer" required />
+      <input name="actor" placeholder="Actor" />
+      <input name="actress" placeholder="Actress" />
+      <button type="submit">➕ Add Song</button>
+    </form>
+
+    <!-- Update Cast -->
+    <h2>Update Actor/Actress</h2>
+    <form action="/songs/update-cast" method="POST" class="form">
+      <input name="songname" placeholder="Song Name" required />
+      <input name="actor" placeholder="New Actor" required />
+      <input name="actress" placeholder="New Actress" required />
+      <button type="submit">🔄 Update</button>
+    </form>
+
+    <!-- Filter by film & singer -->
+    <h2>Filter Songs</h2>
+    <form action="/songs/filter" method="GET" class="form">
+      <input name="singer" placeholder="Singer" />
+      <input name="music_director" placeholder="Music Director" />
+      <input name="film" placeholder="Film" />
+      <label>
+        <input type="checkbox" name="and" value="true" />
+        Match All (AND)
+      </label>
+      <button type="submit">🔍 Filter</button>
+    </form>    
+  </div>
+</body>
+</html>

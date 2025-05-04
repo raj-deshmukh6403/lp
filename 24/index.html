@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reviews</title>
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Reviews</h1>
+    </header>
+    
+    <div class="container">
+        <div class="filter-container">
+            <label for="genre-filter">Filter by Genre:</label>
+            <select id="genre-filter">
+                <option value="all">All Genres</option>
+                <!-- Genres will be added dynamically -->
+            </select>
+        </div>
+        
+        <div id="movies-container">
+            <!-- Movie cards will be inserted here -->
+        </div>
+    </div>
+
+    <!-- External JavaScript files -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

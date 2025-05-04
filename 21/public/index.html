@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bookstore Management</h1>
+
+    <!-- Add New Book Form -->
+    <form id="add-book-form">
+      <h2>Add New Book</h2>
+      <input type="text" id="title" placeholder="Title" required>
+      <input type="text" id="author" placeholder="Author" required>
+      <input type="number" id="price" placeholder="Price" required>
+      <input type="text" id="genre" placeholder="Genre" required>
+      <button type="submit">Add Book</button>
+    </form>
+
+    <!-- Update Book Form -->
+    <form id="update-book-form" style="display: none;">
+      <h2>Update Book</h2>
+      <input type="hidden" id="update-id">
+      <input type="text" id="update-title" placeholder="Title" required>
+      <input type="text" id="update-author" placeholder="Author" required>
+      <input type="number" id="update-price" placeholder="Price" required>
+      <input type="text" id="update-genre" placeholder="Genre" required>
+      <button type="submit">Update Book</button>
+      <button type="button" id="cancel-update">Cancel</button>
+    </form>
+
+    <table id="book-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price</th>
+          <th>Genre</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Populated by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

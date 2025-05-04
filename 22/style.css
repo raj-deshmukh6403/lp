@@ -1,0 +1,107 @@
+/* Color Scheme */
+.ui-page {
+  background: #f0f8ff;
+}
+.ui-header {
+  background: #0056b3 !important;
+  border-color: #0056b3 !important;
+}
+.ui-footer {
+  background: #0056b3 !important;
+  border-color: #0056b3 !important;
+}
+.ui-header .ui-title,
+.ui-footer .ui-title {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+.ui-btn-active {
+  background: #0099cc !important;
+  border-color: #0099cc !important;
+}
+.ui-collapsible-heading-toggle {
+  background: #0099cc !important;
+  color: white !important;
+  border-color: #0078a3 !important;
+}
+.ui-collapsible-content {
+  border-color: #0099cc !important;
+}
+.ui-listview > li {
+  border-color: #b3d9ff !important;
+}
+.ui-btn {
+  background: #e1f0ff !important;
+  color: #003366 !important;
+}
+.ui-navbar .ui-btn {
+  background: #007bff !important;
+  color: white !important;
+  border-color: #0056b3 !important;
+}
+.ui-navbar .ui-btn-active {
+  background: #0056b3 !important;
+}
+.ui-btn-icon-left:after {
+  background-color: #0056b3 !important;
+}
+
+/* Main Styles */
+.center-text {
+  text-align: center;
+}
+.ui-header .ui-title {
+  margin: 0 10%;
+  text-shadow: none !important;
+}
+.logo {
+  max-width: 180px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.home-intro {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.contact-info {
+  padding: 0 15px;
+}
+.ui-listview-inset {
+  margin: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.department-list .ui-collapsible-heading {
+  font-weight: bold;
+}
+.course-list li {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+h2,
+h3 {
+  color: #0056b3;
+}
+h4 {
+  color: #0078a3;
+}
+
+/* Special Elements */
+.ui-btn[data-theme="b"] {
+  background: #ff6600 !important;
+  color: white !important;
+  text-shadow: none !important;
+}
+form input,
+form textarea {
+  border-radius: 8px !important;
+  border-color: #b3d9ff !important;
+}
+.ui-controlgroup-controls {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Enter a task" />
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+    <div id="taskCounters">
+      <p>Total Tasks: <span id="totalTasks">0</span></p>
+      <p>Completed Tasks: <span id="completedTasks">0</span></p>
+    </div>
+    <ul id="taskList">
+      <!-- Tasks will be dynamically loaded here -->
+    </ul>
+
+    <!-- Edit Task Modal -->
+    <div id="editModal" class="modal hidden">
+      <div class="modal-content">
+        <label for="editTaskInput">Edit Task:</label>
+        <input type="text" id="editTaskInput" />
+        <button id="saveEditBtn">Save</button>
+        <button id="cancelEditBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

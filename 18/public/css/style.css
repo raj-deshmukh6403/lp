@@ -1,0 +1,103 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #1d3557;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #457b9d;
+    margin-top: 40px;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #f9f9ff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    background-color: #eef2ff;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: #1d3557;
+  }
+  
+  .card p {
+    margin: 6px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: #e63946;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .btn.delete:hover {
+    background-color: #c91e2f;
+  }
+  
+  .form {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .form input {
+    flex: 1 1 30%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2a9d8f;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form button:hover {
+    background-color: #21867a;
+  }
+  

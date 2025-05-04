@@ -1,0 +1,137 @@
+
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #e50914;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#genre-filter {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    border: 1px solid #444;
+    flex-grow: 1;
+}
+
+.movie-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-poster {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+.movie-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #e50914;
+}
+
+.movie-genre {
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.section-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px 0 8px 0;
+    color: #aaa;
+}
+
+.movie-summary, .movie-review {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.rating-value {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media (max-width: 480px) {
+    .movie-poster {
+        height: 200px;
+    }
+    
+    .movie-title {
+        font-size: 20px;
+    }
+    
+    .movie-summary, .movie-review {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form id="registrationForm">
+      <div class="form-group">
+  <input type="text" id="name" required>
+  <label for="name" data-requirement="Enter your full name">Full Name</label>
+</div>
+
+<div class="form-group">
+  <input type="email" id="email" required>
+  <label for="email" data-requirement="Must be a valid email address">Email</label>
+</div>
+
+<div class="form-group">
+  <input type="tel" id="mobile" required>
+  <label for="mobile" data-requirement="Must be 10 digits">Mobile Number</label>
+</div>
+
+<div class="form-group">
+  <input type="date" id="dob" required>
+  <label for="dob" data-requirement="Required date of birth">Date of Birth</label>
+</div>
+
+<div class="form-group">
+  <input type="text" id="city" required>
+  <label for="city" data-requirement="Enter your city">City</label>
+</div>
+
+<div class="form-group">
+  <textarea id="address" required></textarea>
+  <label for="address" data-requirement="Enter your address">Address</label>
+</div>
+
+<div class="form-group">
+  <input type="password" id="password" required>
+  <label for="password" data-requirement="Must be at least 6 characters">Password</label>
+</div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICT Clubs</title>
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PICT Clubs</h1>
+    </header>
+    
+    <div class="container">
+        <div class="tab-buttons">
+            <button class="tab-button active" data-filter="all">All</button>
+            <button class="tab-button" data-filter="technical">Technical</button>
+            <button class="tab-button" data-filter="cultural">Cultural</button>
+        </div>
+        
+        <div id="clubs-container">
+            <!-- Clubs will be dynamically inserted here using jQuery -->
+        </div>
+    </div>
+     
+    <script src="script.js"></script>
+    
+</body>
+</html>
