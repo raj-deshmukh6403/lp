@@ -1,0 +1,6 @@
+@import '../registration/registration.component.css'; /* Reuse styles from registration */
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-top: 1rem;
+}

@@ -1,0 +1,40 @@
+<div class="card">
+    <h2>Register</h2>
+    <form #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+      <div class="form-group">
+        <input type="text" name="firstName" placeholder="First Name" ngModel required />
+        <small *ngIf="registerForm.submitted && !registerForm.controls['firstName']?.valid">
+          First name is required.
+        </small>
+      </div>
+      <div class="form-group">
+        <input type="text" name="lastName" placeholder="Last Name" ngModel required />
+        <small *ngIf="registerForm.submitted && !registerForm.controls['lastName']?.valid">
+          Last name is required.
+        </small>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" ngModel required email />
+        <small *ngIf="registerForm.submitted && !registerForm.controls['email']?.valid">
+          Enter a valid email address.
+        </small>
+      </div>
+      <div class="form-group">
+        <input type="tel" name="mobile" placeholder="Mobile Number" ngModel required pattern="[0-9]{10}" />
+        <small *ngIf="registerForm.submitted && !registerForm.controls['mobile']?.valid">
+          Enter a valid 10-digit mobile number.
+        </small>
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" placeholder="Password" ngModel required minlength="6" />
+        <small *ngIf="registerForm.submitted && !registerForm.controls['password']?.valid">
+          Password must be at least 6 characters long.
+        </small>
+      </div>
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <p class="success-message">{{ message }}</p>
+    <p>
+      Already have an account? <a routerLink="/login">Login here</a>
+    </p>
+  </div>

@@ -1,0 +1,22 @@
+<div class="card">
+    <h2>Login</h2>
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" ngModel required email />
+        <small *ngIf="loginForm.submitted && !loginForm.controls['email']?.valid">
+          Enter a valid email address.
+        </small>
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" placeholder="Password" ngModel required minlength="6" />
+        <small *ngIf="loginForm.submitted && !loginForm.controls['password']?.valid">
+          Password must be at least 6 characters long.
+        </small>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <p class="error-message">{{ message }}</p>
+    <p>
+      Don't have an account? <a routerLink="/">Register here</a>
+    </p>
+  </div>
